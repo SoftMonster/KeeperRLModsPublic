@@ -6,7 +6,7 @@ https://github.com/SoftMonster/KeeperRLModsPublic
 
 The rights you have regarding this software configuration are found in COPYING.txt
 
-https://github.com/SoftMonster/KeeperRLModsPublic/blob/master/Alpha30/Alpha29Bonus/COPYING.txt
+https://github.com/SoftMonster/KeeperRLModsPublic/blob/master/Alpha30/Alpha30Bonus/COPYING.txt
 
 Note that the configuration files in Git are branched from the vanilla configuration files and for that reason, they must remain under the GNU General Public License.
 
