@@ -14,163 +14,7 @@
     requiresLight = true
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
   }
-  "CANIF_TREE" modify append {
-    name = "tree"
-    viewId = { "canif_tree" }
-    canHideHere = true
-    blockVision = { NORMAL }
-    destroyedRemains = "TREE_TRUNK"
-    burntRemains = "BURNT_TREE"
-    dissolveTo = "BURNT_TREE"
-    strength2 = {
-      100 BOULDER
-      70 CUT
-    }
-    fire = 100
-    itemDrop = {{{{Simple "WoodPlank"} 1 { 8 14 }}}}
-    summonedElement = "ENT"
-    tryDestroyFX = { WOOD_SPLINTERS }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} none }
-      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} none }
-      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} none }
-      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} none }
-      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} none }
-    } 
-  }
-
-  "DECID_TREE" modify append {
-    viewId = { "decid_tree" }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} none }
-      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} none }
-      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} none }
-      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} none }
-      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} none }
-    } 
-  }
-  "BUSH" modify append {
-    name = "bush"
-    viewId = { "bush" }
-    strength2 = {
-      20 BOULDER
-      10 CUT
-    }
-    canHideHere = true
-    fire = 30
-    itemDrop = {{{{Simple "WoodPlank"} 1 { 2 4 }}}}
-    tryDestroyFX = { WOOD_SPLINTERS }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-      Chance 0.001 Chain { Message "A chicken walks out of a bush!" SummonEnemy "CHICKEN" {1} none }
-      Chance 0.001 Chain { Message "A boar emerges from the bushes!" SummonEnemy "BOAR" {1} none }
-      Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} none }
-    } 
-  }
-  "ADAMANTIUM_ORE" modify append {
-    name = "adamantium ore"
-    viewId = { "adamantium_ore" }
-    blockMovement = true
-    blockVision = { NORMAL ELF }
-    wall = true
-    clearFogOfWar = true
-    itemDrop = {{{{Simple "AdaOre"} 1 { 16 28 }}}}
-    strength2 = {
-      500 BOULDER
-      500 DIG
-      500 HOSTILE_DIG
-      2000 HOSTILE_DIG_NO_SKILL
-    }
-    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
-    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" { 1 } none }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" { 1 } none }
-      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" { 1 } none }
-      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" { 1 } none }
-	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
-    } 
-  }
-  "IRON_ORE" modify append {
-    name = "iron ore"
-    viewId = { "iron_ore" }
-    blockMovement = true
-    blockVision = { NORMAL ELF }
-    wall = true
-    clearFogOfWar = true
-    itemDrop = {{{{Simple "IronOre"} 1 { 16 28 }}}}
-    strength2 = {
-      200 BOULDER
-      220 DIG
-      200 HOSTILE_DIG
-      2000 HOSTILE_DIG_NO_SKILL
-    }
-    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-	  Chance 0.001 Chain { Message "You have attacked a iron golem!" SummonEnemy "IRON_GOLEM" {1} none }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
-	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
-    } 
-    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
-  }
-  "STONE" modify append {
-    name = "granite"
-    viewId = { "stone" }
-    blockMovement = true
-    blockVision = { NORMAL ELF }
-    wall = true
-    clearFogOfWar = true
-    itemDrop = {{{{Simple "Rock"} 1 { 16 28 }}}}
-    strength2 = {
-      200 BOULDER
-      250 DIG
-      200 HOSTILE_DIG
-      2000 HOSTILE_DIG_NO_SKILL
-    }
-    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
-    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-	  Chance 0.001 Chain { Message "You have attacked a stone golem!" SummonEnemy "STONE_GOLEM" {1} none }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
-	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
-    } 
- }
-  "GOLD_ORE" modify append {
-    name = "gold ore"
-    viewId = { "gold_ore" }
-    blockMovement = true
-    blockVision = { NORMAL ELF }
-    wall = true
-    clearFogOfWar = true
-    itemDrop = {{{{Simple "GoldPiece"} 1 { 16 28 }}}}
-    strength2 = {
-      200 BOULDER
-      220 DIG
-      200 HOSTILE_DIG
-      2000 HOSTILE_DIG_NO_SKILL
-    }
-    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
-    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
-    #Modded - destroyed effect added
-    destroyedEffect = Chain {
-	  Chance 0.001 Chain { Message "You have attacked a gold golem!" SummonEnemy "GOLD_GOLEM" {1} none }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
-	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
-    } 
-  }
+  
   "RUIN_WALL" modify append {
     name = "wall"
     viewId = { "ruin_wall" }
@@ -186,7 +30,7 @@
       300 HOSTILE_DIG_NO_SKILL
     }
   }
-
+  
   "FLOOR_WOOD1" modify append {
     name = "floor"
     viewId = { "wood_floor2" }
@@ -277,23 +121,23 @@
     itemDrop = {{{{Simple "WoodPlank"} 1 { 10 15 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
   }
-
-  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } canBuildOutsideOfTerritory = true }
-  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS canBuildOutsideOfTerritory = true }
-  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
+  
+  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true  }
+  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true }
+  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true }
+  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true }
+  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true }
+  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true }
+  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true }
+  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true }
+  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true }
+  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true }
+  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true }
+  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true }
+  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true }
+  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } }
+  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = UsageEffect "use" Stairs }
+  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true }
   
   "LAVA_ROCK" inherit "MUD"
   {
@@ -368,7 +212,11 @@
   {
    name = "tar pit"
    viewId = { "tar_pit" }
-   entryType = Trap { Lasting SLOWED }
+   entryType = Trap { Name "tar" FirstSuccessful {  #Effect name is used when disarming the trap.
+	                     Filter LastingEffect FLYING CreatureMessage "fly above the tar pit" "flies above the tar pit"
+					     Lasting SLOWED
+					   }
+					 }
    warning = true
    constructMessage = SET_UP
   }
@@ -377,7 +225,11 @@
   {
     name = "floor_spikes trap"
     viewId = { "floor_spikes_trap" }
-    entryType = Trap { Lasting BLEEDING}
+    entryType = Trap { Name "floor spike" FirstSuccessful { #Effect name is used when disarming the trap.
+	                     Filter LastingEffect FLYING CreatureMessage "fly above the spikes" "flies above the spikes"
+					     Lasting BLEEDING
+					   }
+					 }
     warning = true
     constructMessage = SET_UP
   }
@@ -716,19 +568,24 @@
     	  DropItems {Simple "GoldPiece"} {15 25}
 		  SummonEnemy "RAT" {3 4} none
       }
-      ChooseRandom {
-        Message "The chest breaks open easily."
-        Message "The chest resists and then suddenly breaks open."
-        Message "The chest cracks along the top."
-      }
-      ChooseRandom {
-        Chain { Message "A blue gas leaks from the chest." Lasting HALLU }
-        Chain { Message "The chest catches fire as you trigger the trap." Fire }
-        Chain { Message "A frost bolt hits you!" Ice }
-        Chain { Message "An acid ball splashes you!" Acid }
-        Chain { Message "You are stabbed by a needle!" Lasting POISON }
-        Chain { Message "A small device slits you open!" Lasting BLEEDING }
-        Chain { Message "Something makes you cough!" Lasting PLAGUE }
+	  FirstSuccessful {
+	    Filter LastingEffect DISARM_TRAPS_SKILL Message "You disarm a trap on the chest using your disarming skills."
+		Chain {  
+          ChooseRandom {
+            Message "The chest breaks open easily."
+            Message "The chest resists and then suddenly breaks open."
+            Message "The chest cracks along the top."
+          }
+          ChooseRandom {
+            Chain { Message "A blue gas leaks from the chest." Lasting HALLU }
+            Chain { Message "The chest catches fire as you trigger the trap." Fire }
+            Chain { Message "A frost bolt hits you!" Ice }
+            Chain { Message "An acid ball splashes you!" Acid }
+            Chain { Message "You are stabbed by a needle!" Lasting POISON }
+            Chain { Message "A small device slits you open!" Lasting BLEEDING }
+            Chain { Message "Something makes you cough!" Lasting PLAGUE }
+		  }
+		}
       } 
       DestroyWalls BASH
 	}

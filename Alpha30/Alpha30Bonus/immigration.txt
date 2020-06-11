@@ -7,7 +7,7 @@
           invisible = true
           initialRecruitment = 4
           specialTraits = {
-             { 1.0 { LastingEffect NO_CARRY_LIMIT }} #Modded
+             { 1.0 { Lasting { NO_CARRY_LIMIT }}} #Modded
           }
         }
     }
@@ -35,10 +35,10 @@
             { 0.1 AttractionInfo 1 {FurnitureType "FORGE" FurnitureType "WORKSHOP" FurnitureType "JEWELLER"}}
           }
           specialTraits = {
-         { 0.03 { WorkshopType "WORKSHOP" LastingEffect INSANITY }}
-         { 0.05 { WorkshopType "FORGE" LastingEffect INSANITY }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+         { 0.03 { WorkshopType "WORKSHOP" Lasting { INSANITY } }}
+         { 0.05 { WorkshopType "FORGE" Lasting { INSANITY } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -59,15 +59,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -81,9 +81,9 @@
           specialTraits = {
              { 0.10 { ExtraTraining SPELL 4}}
              { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -95,13 +95,13 @@
             { 0.0 MinTurnRequirement 500 }
           }
           specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus SPELL_DAMAGE 13 Lasting { INSANITY }}}
              { 0.10 { ExtraTraining SPELL 4}}
          { 0.05 { WorkshopType "LABORATORY" }}
-         { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-         { 0.02 { LastingEffect HATE_ELVES }}
-         { 0.02 { LastingEffect HATE_HUMANS }}
-         { 0.01 { LastingEffect ENTERTAINER }}
+         { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+         { 0.02 { Lasting { HATE_ELVES } }}
+         { 0.02 { Lasting { HATE_HUMANS } }}
+         { 0.01 { Lasting { ENTERTAINER } }}
       }
     }
     {
@@ -114,10 +114,10 @@
       }
       specialTraits = {
          { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -130,15 +130,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -151,15 +151,15 @@
             { 0.3 AttractionInfo 1 {ItemIndex RANGED_WEAPON}}
           }
           specialTraits = {
-             { 0.03 { AttrBonus RANGED_DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus RANGED_DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -179,10 +179,10 @@
                 attackMsg = BITE
                 victimEffect = {0.1 Lasting POISON} } } } }
              { 0.1 { ExtraBodyPart HEAD 1}}
-             { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}                       #Modded
-             { 1.0 { LastingEffect SWARMER }}
-             { 0.2 { LastingEffect COLLAPSED}}                                           #Modded
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }} #Modded
+             { 0.3 { Lasting { BLIND } Lasting { TELEPATHY }}}                       #Modded
+             { 1.0 { Lasting { SWARMER } }}
+             { 0.2 { Lasting { COLLAPSED }}}                                           #Modded
+             { 0.1 { Lasting { COLLAPSED } Lasting { PLAGUE } Lasting { BLIND } }} #Modded
 	      }
         }
         {
@@ -196,7 +196,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect SLOWED }}
+             { 0.3 { Lasting { SLOWED } }}
           }
         }
         {
@@ -210,11 +210,11 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect HATE_GREENSKINS }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.3 { Lasting { TELEPATHY } }}
+             { 0.3 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { HATE_GREENSKINS } }}
+             { 0.3 { Lasting { FLYING } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -228,7 +228,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 1.0 { LastingEffect BAD_BREATH }}
+             { 1.0 { Lasting { BAD_BREATH } }}
           }
          }
          {
@@ -312,11 +312,11 @@
             { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}} #Modded
           }
           specialTraits = {
-             { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { LastingEffect INSANITY}}
-             { 0.1 { LastingEffect HATE_UNDEAD}}
-             { 0.3 { LastingEffect AMBUSH_SKILL }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.1 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { Lasting { INSANITY }}}
+             { 0.1 { Lasting { HATE_UNDEAD }}}
+             { 0.3 { Lasting { AMBUSH_SKILL } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -378,7 +378,7 @@
             { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
-             { 0.1 { LastingEffect INSANITY}}
+             { 0.1 { Lasting { INSANITY }}}
           }
         }
         {
@@ -403,10 +403,10 @@
             { 0.1 AttractionInfo 1 {FurnitureType "FORGE" FurnitureType "WORKSHOP" FurnitureType "JEWELLER"}}
           }
           specialTraits = {
-             { 0.05 { OneOfTraits { LastingEffect FAST_CRAFTING LastingEffect SLOW_CRAFTING } }}
-         { 0.03 { WorkshopType "WORKSHOP" LastingEffect INSANITY }}
-         { 0.03 { WorkshopType "FORGE" LastingEffect INSANITY }}
-             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.05 { OneOfTraits { Lasting { FAST_CRAFTING } Lasting { SLOW_CRAFTING } } }}
+         { 0.03 { WorkshopType "WORKSHOP" Lasting { INSANITY } }}
+         { 0.03 { WorkshopType "FORGE" Lasting { INSANITY } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -419,11 +419,11 @@
           specialTraits = {
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
-             { 0.05 { LastingEffect HATE_ELVES }}
-             { 0.05 { LastingEffect HATE_DWARVES }}
-             { 0.05 { LastingEffect HATE_GREENSKINS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
+             { 0.05 { Lasting { HATE_ELVES } }}
+             { 0.05 { Lasting { HATE_DWARVES } }}
+             { 0.05 { Lasting { HATE_GREENSKINS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -437,7 +437,7 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 4 AttrBonus DEFENSE -4}}
              { 0.05 { ExtraTraining SPELL 2}}
-             { 0.02 { LastingEffect HATE_UNDEAD }}
+             { 0.02 { Lasting { HATE_UNDEAD } }}
           }
         }
         {
@@ -462,15 +462,15 @@
             { 0.1 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
           }
           specialTraits = {
-             { 0.03 { AttrBonus RANGED_DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus RANGED_DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.03 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -481,20 +481,20 @@
             { 0.0 AttractionInfo 1 {FurnitureType "THRONE"}}
           }
           specialTraits = {
-            { 1.0 { LastingEffect ENTERTAINER }}
+            { 1.0 { Lasting { ENTERTAINER } }}
           }
         }
-        {
-      ids = { "DWARF_BLACKSMITH" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 RecruitmentInfo { "DWARVES" } 0 FIGHTER }
-        { 1.0 CostInfo "GOLD" 100 }
+      {
+        ids = { "DWARF_BLACKSMITH" "DWARF_WARRIOR" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
       }
-      specialTraits = {
-       { 1.0 { WorkshopType "FORGE" }}
-      }
-    }
     {
       ids = { "GALEAM" }
       traits = { FIGHTER }
@@ -546,6 +546,185 @@
 }
 
     #Modded immigrants
+
+    "neutral_allies"
+	{
+        {
+          ids = { "STONE_GOLEM" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          requirements = {
+            { 0.0 RecruitmentInfo { "GNOMES" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 12 }
+          }
+        }
+	}
+
+    "dark_allies_basic"
+	{
+        {
+          ids = { "DARK_ELF_WARRIOR" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "DARK_ELVES_ALLY" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 20 }
+          }
+        }
+        {
+          ids = { "ORC_FEMALE" "ORC" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "ORC_VILLAGE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 5 }
+          }
+        }
+        {
+          ids = { "HARPY" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus RANGED_DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "HARPY_CAVE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 5 }
+          }
+        }
+        {
+          ids = { "OGRE_FEMALE" "OGRE" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "OGRE_CAVE" "ORC_VILLAGE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 12 }
+          }
+        }
+	}
+    "dark_allies_extended"
+	{
+        {
+          ids = { "DARK_ELF_ARCHER" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo {"DARK_ELF_EMPIRE"} 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 50 }
+          }
+        }
+        {
+          ids = { "SHADOW_KNIGHT" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+        {
+          ids = { "SHADOW_PRIEST" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+        {
+          ids = { "SHADOW_ARCHER" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+	}
+
+    "white_allies_basic"
+	{
+      {
+        ids = { "TEUTON" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "TEUTONS" } 3 FIGHTER }
+          { 1.0 CostInfo "GOLD" 150 }
+        }
+      }
+      {
+        ids = { "DWARF_BLACKSMITH" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
+      }
+      {
+        ids = { "DWARF_WARRIOR" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
+      }
+	}
+
+    "white_allies_extended"
+	{
+		{
+		  ids = { "ROYAL_KNIGHT" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "ROYAL_PRIEST" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "ROYAL_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "CENTAUR_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "CENTAURS" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 200 }
+		  }
+		}
+		{
+		  ids = { "ELF_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "ELF_KINGDOM" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 150 }
+		  }
+		}
+	}
+	
     "elementals"
     {
         {
@@ -587,159 +766,133 @@
         { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite forest magic"   }}}
     }
     
-    "gnomes" modify {
+    "gnome_wizards"
     {
-      ids = { "GNOME_PLAYER" }
-      traits = { LEADER }
-      invisible = true
-      initialRecruitment = 0
-      spawnLocation = NearLeader
-    }
-    {
-      ids = { "AUTOMATON_WORKER_WOOD" }
-      traits = { WORKER NO_LIMIT }
-      invisible = true
-      initialRecruitment = 3
-      spawnLocation = NearLeader
-    }
-    {
-      ids = { "AUTOMATON_WORKER_WOOD" }
-      traits = { WORKER NO_LIMIT }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "AUTOMATON_WORKER_IRON" }
-      traits = { WORKER NO_LIMIT }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "AUTOMATON_CORPUS_WOOD" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "LIGHT_AUTOMATON_CORPUS_WOOD" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "AUTOMATON_CORPUS_IRON" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "LIGHT_AUTOMATON_CORPUS_IRON" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-    }
-    {
-      ids = { "HEAVY_AUTOMATON_CORPUS_IRON" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 AssembledRequirement }
-      }
-	}
-	{
+        {
+          ids = { "IMP" }
+          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
+          spawnLocation = NearLeader
+          keybinding = CREATE_IMP
+          sound = CREATE_IMP 2
+          noAuto = true
+          initialRecruitment = 4
+          requirements = {
+            { 1 ExponentialCost "GOLD" 30 5 4 }
+          }
+        }  
+        {
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+        }
+        {
           ids = { "GNOME_PLAYER" }
-          traits = { FIGHTER LEADER}
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.45
           specialTraits = {
             { 0.05 { WorkshopType "WORKSHOP" }}
             { 0.05 { WorkshopType "FORGE" }}
             { 0.1 { WorkshopType "JEWELER" }}
-            { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.1 { LastingEffect SWIMMING_SKILL }}
+            { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.1 { Lasting { SWIMMING_SKILL } }}
             { 0.1 { WorkshopType "LABORATORY" }}
-            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
-            { 0.05 { LastingEffect REGENERATION }}
-            { 0.1 { LastingEffect TELEPATHY }}
-            { 0.1 { LastingEffect SLEEP_RESISTANT }}
-            { 0.1 { LastingEffect NIGHT_VISION }}
-            { 0.05 { LastingEffect HATE_ELVES }}
-            { 0.05 { LastingEffect HATE_HUMANS }}
+            { 0.05 { Lasting { MAGIC_RESISTANCE } }}
+            { 0.05 { Lasting { REGENERATION } }}
+            { 0.1 { Lasting { TELEPATHY } }}
+            { 0.1 { Lasting { SLEEP_RESISTANT } }}
+            { 0.1 { Lasting { NIGHT_VISION } }}
+            { 0.05 { Lasting { HATE_ELVES } }}
+            { 0.05 { Lasting { HATE_HUMANS } }}
             { 1.0 { AttrBonus SPELL_DAMAGE 10 ExtraTraining SPELL 12 }}
 		  }
 		}
 		{
           ids = { "GNOME_CROSSBOWMAN_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.2
+          traits = { FIGHTER }
+          frequency = 0.5
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.2 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
             { 0.0 TechId "archery" }}
           specialTraits = {
-            { 0.25 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.1 { LastingEffect SWIMMING_SKILL }}
-            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
-            { 0.05 { LastingEffect RANGED_RESISTANCE }}
-            { 0.05 { LastingEffect REGENERATION }}
-            { 0.05 { LastingEffect TELEPATHY }}
-            { 0.4 { LastingEffect NIGHT_VISION }}
-            { 0.2 { LastingEffect HATE_ELVES }}
-            { 0.2 { LastingEffect HATE_HUMANS }}
+            { 0.25 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.1 { Lasting { SWIMMING_SKILL } }}
+            { 0.05 { Lasting { MAGIC_RESISTANCE } }}
+            { 0.05 { Lasting { RANGED_RESISTANCE } }}
+            { 0.05 { Lasting { REGENERATION } }}
+            { 0.05 { Lasting { TELEPATHY } }}
+            { 0.4 { Lasting { NIGHT_VISION } }}
+            { 0.2 { Lasting { HATE_ELVES } }}
+            { 0.2 { Lasting { HATE_HUMANS } }}
 		  }
         }
 		{
           ids = { "GNOME_FIRE_MAGE_PLAYER" "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.45
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_IRON"}}
             { 0.0 TechId "advanced sorcery" }}
           specialTraits = {
             { 0.2 { WorkshopType "JEWELER" }}
-            { 0.05 { LastingEffect SWIMMING_SKILL }}
+            { 0.05 { Lasting { SWIMMING_SKILL } }}
             { 0.2 { WorkshopType "LABORATORY" }}
-            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
-			{ 0.2 { LastingEffect FIRE_RESISTANT }}
-			{ 0.05 { LastingEffect POISON_RESISTANT }}
-            { 0.4 { LastingEffect TELEPATHY }}
-            { 0.4 { LastingEffect NIGHT_VISION }}
-            { 0.08 { LastingEffect HATE_ELVES }}
-            { 0.08 { LastingEffect HATE_HUMANS }}
+            { 0.05 { Lasting { MAGIC_RESISTANCE } }}
+			{ 0.2 { Lasting { FIRE_RESISTANT } }}
+			{ 0.05 { Lasting { POISON_RESISTANT } }}
+            { 0.4 { Lasting { TELEPATHY } }}
+            { 0.4 { Lasting { NIGHT_VISION } }}
+            { 0.08 { Lasting { HATE_ELVES } }}
+            { 0.08 { Lasting { HATE_HUMANS } }}
             { 0.2 { AttrBonus SPELL_DAMAGE 5 }}
 			{ 0.1 { ExtraTraining SPELL 2 }}
 		  }
         }
 		{
           ids = { "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.35
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
             { 0.0 TechId "sorcery" }}
           specialTraits = {
             { 0.1 { WorkshopType "JEWELER" }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.2 { LastingEffect SWIMMING_SKILL }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.2 { Lasting { SWIMMING_SKILL } }}
             { 0.1 { WorkshopType "LABORATORY" }}
-            { 0.2 { LastingEffect MAGIC_RESISTANCE }}
-			{ 0.2 { LastingEffect FIRE_RESISTANT }}
-			{ 0.05 { LastingEffect POISON_RESISTANT }}
-            { 0.4 { LastingEffect TELEPATHY }}
-            { 0.4 { LastingEffect NIGHT_VISION }}
-            { 0.08 { LastingEffect HATE_ELVES }}
-            { 0.08 { LastingEffect HATE_HUMANS }}
+            { 0.2 { Lasting { MAGIC_RESISTANCE } }}
+			{ 0.2 { Lasting { FIRE_RESISTANT } }}
+			{ 0.05 { Lasting { POISON_RESISTANT } }}
+            { 0.4 { Lasting { TELEPATHY } }}
+            { 0.4 { Lasting { NIGHT_VISION } }}
+            { 0.08 { Lasting { HATE_ELVES } }}
+            { 0.08 { Lasting { HATE_HUMANS } }}
             { 0.2 { AttrBonus SPELL_DAMAGE 5 }}
 			{ 0.1 { ExtraTraining SPELL 2 }}
 		  }
         }
         {
           ids = { "GNOME_FIRE_WIZARD_PLAYER" "GNOME_FIRE_WIZARD_PLAYER" }
-          traits = { FIGHTER LEADER }
+          traits = { FIGHTER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
@@ -748,11 +901,21 @@
         }
         {
           ids = { "GNOME_WIZARD_PLAYER" "GNOME_WIZARD_PLAYER" }
-          traits = { FIGHTER LEADER }
+          traits = { FIGHTER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
             { 0.0 TechId "gnome wizards" }
+          }
+        }
+        {
+          ids = { "MUSHROOM_MAN" }
+          traits = { FIGHTER }
+          frequency = 0.2
+		  consumeIds = true
+          initialRecruitment = 1
+          requirements = {
+            { 0.0 TechId "alchemical conversion" }
           }
         }
     }
@@ -781,12 +944,12 @@
 		  }
         }
         {
-          ids = { "DWARF_FIGHTER" }
+          ids = { "DWARF_TOUGH" }
           frequency = 0.5
           traits = { FIGHTER }
           requirements = { {0.0 TechId "basic nobility"} {0.0 NegateRequirement TechId "advanced nobility"} }		  
           specialTraits = {
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
             { 0.2 { WorkshopType "LABORATORY" }}
             { 0.2 { WorkshopType "JEWELER" }}
             { 0.2 { WorkshopType "FORGE" }}
@@ -799,7 +962,7 @@
           requirements = {{ 0.0 TechId "advanced nobility"} {0.0 NegateRequirement TechId "elite nobility"} }
           specialTraits = {
             { 0.3 { WorkshopType "FORGE" }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
             { 0.3 { WorkshopType "LABORATORY" }}
             { 0.3 { WorkshopType "JEWELER" }}
 		  }
@@ -814,13 +977,13 @@
 		  { 0.1 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
 		  }
           specialTraits = {
-            { 0.3 { LastingEffect TELEPATHY }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.3 { Lasting { TELEPATHY } }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
             { 0.1 { AttrBonus SPELL_DAMAGE 5 }}
 			{ 0.1 { AttrBonus DAMAGE 5 }}
             { 0.2 { AttrBonus DEFENSE 5 }}
-			{ 0.08 { AttrBonus DEFENSE 15 AttrBonus DAMAGE 15 LastingEffect INSANITY }}
-            { 0.3 { LastingEffect NIGHT_VISION }}
+			{ 0.08 { AttrBonus DEFENSE 15 AttrBonus DAMAGE 15 Lasting { INSANITY } }}
+            { 0.3 { Lasting { NIGHT_VISION } }}
 		  }
         }
 		{
@@ -832,12 +995,12 @@
             { 0.5 { WorkshopType "FORGE" }}
             { 0.5 { WorkshopType "WORKSHOP" }}
             { 0.3 { WorkshopType "JEWELER" }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
             { 0.3 { WorkshopType "LABORATORY" }}
-            { 0.2 { LastingEffect REGENERATION }}
-            { 0.2 { LastingEffect TELEPATHY }}
-            { 0.2 { LastingEffect SLEEP_RESISTANT }}
-            { 0.2 { LastingEffect NIGHT_VISION }}
+            { 0.2 { Lasting { REGENERATION } }}
+            { 0.2 { Lasting { TELEPATHY } }}
+            { 0.2 { Lasting { SLEEP_RESISTANT } }}
+            { 0.2 { Lasting { NIGHT_VISION } }}
 		  }
         }
 		{
@@ -847,7 +1010,7 @@
             { 1.0 CostInfo "GOLD" 50 }
 		  }
           specialTraits = {
-            { 0.25 { LastingEffect COPULATION_SKILL }}
+            { 0.25 { Lasting { COPULATION_SKILL } }}
           }
         }
     	{
@@ -862,7 +1025,7 @@
           }
         }
         {
-          ids = { "ELITE_DWARF_WARRIOR" "DWARF_WARRIOR" "DWARF_FIGHTER" "DWARF_MILITIA" }
+          ids = { "ELITE_DWARF_WARRIOR" "DWARF_WARRIOR" "DWARF_TOUGH" "DWARF_MILITIA" }
           traits = { FIGHTER WORKER }
           spawnLocation = Pregnancy
           requirements = {
@@ -872,12 +1035,12 @@
             { 0.1 { WorkshopType "FORGE" }}
             { 0.1 { WorkshopType "WORKSHOP" }}
             { 0.1 { WorkshopType "JEWELER" }}
-            { 0.1 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.1 { Lasting { DISARM_TRAPS_SKILL } }}
             { 0.1 { WorkshopType "LABORATORY" }}
-            { 0.05 { LastingEffect REGENERATION }}
-            { 0.1 { LastingEffect TELEPATHY }}
-            { 0.1 { LastingEffect SLEEP_RESISTANT }}
-            { 0.1 { LastingEffect NIGHT_VISION }}
+            { 0.05 { Lasting { REGENERATION } }}
+            { 0.1 { Lasting { TELEPATHY } }}
+            { 0.1 { Lasting { SLEEP_RESISTANT } }}
+            { 0.1 { Lasting { NIGHT_VISION } }}
           }
         }
     }
@@ -885,7 +1048,7 @@
     "necromancer"
     {
         {
-          ids = { "SKELETON" "SKELETON" "SKELETON" "SKELETON" "SKELETON" }
+          ids = { "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER NO_LIMIT }
           spawnLocation = NearLeader
 		  consumeIds = true
@@ -921,8 +1084,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
 	    {
@@ -938,8 +1101,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
 		{
@@ -955,8 +1118,8 @@
           specialTraits = {
              { 0.03 { AttrBonus DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
         {
@@ -969,7 +1132,7 @@
             { 1.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             {1.0 { LastingEffect DARKNESS_SOURCE }}
+             {1.0 { Lasting { DARKNESS_SOURCE } }}
 			 {1.0 { WorkshopType "WORKSHOP" }}
           }
         }
@@ -999,7 +1162,7 @@
           }
         }
         {
-          ids = { "SKELETON" }
+          ids = { "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
@@ -1010,7 +1173,7 @@
           }
         }
         {
-          ids = { "SKELETON" }
+          ids = { "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER }
           frequency = 0.75
           groupSize = {4 9}
@@ -1042,10 +1205,10 @@
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
           }
           specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.3 { LastingEffect DARKNESS_SOURCE }}
+             { 0.3 { Lasting { TELEPATHY } }}
+             { 0.3 { Lasting { FIRE_RESISTANT } }}
+             { 0.3 { Lasting { FLYING } }}
+             { 0.3 { Lasting { DARKNESS_SOURCE } }}
              { 0.3 { AttrBonus SPELL_DAMAGE 4}}
              { 0.3 { ExtraTraining SPELL 4}}
           }
@@ -1076,10 +1239,10 @@
             { 1.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.3 { LastingEffect DARKNESS_SOURCE }}
+             { 0.3 { Lasting { TELEPATHY } }}
+             { 0.3 { Lasting { FIRE_RESISTANT } }}
+             { 0.3 { Lasting { FLYING } }}
+             { 0.3 { Lasting { DARKNESS_SOURCE } }}
              { 0.3 { AttrBonus SPELL_DAMAGE 4}}
              { 0.3 { ExtraTraining SPELL 4}}
           }
@@ -1136,9 +1299,9 @@
             { 0.0 MinTurnRequirement 1000 }
           }
           specialTraits = {
-            { 1.0 { LastingEffect EXPLORE_SKILL}}
-            { 1.0 { LastingEffect EXPLORE_NOCTURNAL_SKILL}}
-            { 1.0 { LastingEffect NIGHT_VISION}}
+            { 1.0 { Lasting { EXPLORE_SKILL }}}
+            { 1.0 { Lasting { EXPLORE_NOCTURNAL_SKILL }}}
+            { 1.0 { Lasting { NIGHT_VISION }}}
           }
         }
         {
@@ -1165,9 +1328,9 @@
           specialTraits = {
             { 1.0 { ExtraTraining MELEE 5}}
             { 1.0 { AttrBonus DAMAGE 7}}
-			{ 1.0 { LastingEffect MELEE_RESISTANCE}} 
-            { 1.0 { LastingEffect RAGE}}
-            { 1.0 { LastingEffect DEF_BONUS}}			
+			{ 1.0 { Lasting { MELEE_RESISTANCE }}} 
+            { 1.0 { Lasting { RAGE }}}
+            { 1.0 { Lasting { DEF_BONUS }}}			
           }
         }
         {
@@ -1183,7 +1346,7 @@
           specialTraits = {
             { 1.0 { ExtraTraining SPELL 5}}
             { 1.0 { AttrBonus SPELL_DAMAGE 5}}
-			{ 1.0 { LastingEffect MAGIC_RESISTANCE}} 
+			{ 1.0 { Lasting { MAGIC_RESISTANCE }}} 
           }
         }
         {
@@ -1197,11 +1360,11 @@
             { 0.0 TechId "lord of speed" }
           }
           specialTraits = {
-            { 1.0 { LastingEffect SPEED}}
+            { 1.0 { Lasting { SPEED }}}
             { 1.0 { ExtraTraining MELEE 2}}
             { 1.0 { WorkshopType "FORGE"}}
-            { 1.0 { LastingEffect FAST_CRAFTING}} 
-            { 1.0 { LastingEffect FAST_TRAINING}}
+            { 1.0 { Lasting { FAST_CRAFTING }}} 
+            { 1.0 { Lasting { FAST_TRAINING }}}
           }
         }
         {
@@ -1215,12 +1378,12 @@
             { 0.0 TechId "lord of resistance" }
           }
           specialTraits = {
-            { 1.0 { LastingEffect SLEEP_RESISTANT}}
-            { 1.0 { LastingEffect FIRE_RESISTANT}}
-			{ 1.0 { LastingEffect POISON_RESISTANT}} 
-			{ 1.0 { LastingEffect MAGIC_RESISTANCE}} 
-			{ 1.0 { LastingEffect MELEE_RESISTANCE}} 
-			{ 1.0 { LastingEffect RANGED_RESISTANCE}}
+            { 1.0 { Lasting { SLEEP_RESISTANT }}}
+            { 1.0 { Lasting { FIRE_RESISTANT }}}
+			{ 1.0 { Lasting { POISON_RESISTANT }}} 
+			{ 1.0 { Lasting { MAGIC_RESISTANCE }}} 
+			{ 1.0 { Lasting { MELEE_RESISTANCE }}} 
+			{ 1.0 { Lasting { RANGED_RESISTANCE }}}
           }
         }
     }
@@ -1250,10 +1413,10 @@
             { 0.1 AttractionInfo 1 {FurnitureType "FORGE" FurnitureType "WORKSHOP" FurnitureType "JEWELLER"}}
           }
           specialTraits = {
-             { 0.03 { WorkshopType "WORKSHOP" LastingEffect INSANITY }}
-             { 0.03 { WorkshopType "FORGE" LastingEffect INSANITY }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { WorkshopType "WORKSHOP" Lasting { INSANITY } }}
+             { 0.03 { WorkshopType "FORGE" Lasting { INSANITY } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1269,15 +1432,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1290,13 +1453,13 @@
             { 0.0 MinTurnRequirement 500 }
           }
           specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus SPELL_DAMAGE 13 Lasting { INSANITY }}}
              { 0.10 { ExtraTraining SPELL 4}}
              { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1309,13 +1472,13 @@
             { 0.0 MinTurnRequirement 500 }
           }
           specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus SPELL_DAMAGE 13 Lasting { INSANITY }}}
              { 0.10 { ExtraTraining SPELL 4}}
              { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1329,15 +1492,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1351,15 +1514,15 @@
             { 0.3 AttractionInfo 1 {ItemIndex RANGED_WEAPON}}
           }
           specialTraits = {
-             { 0.03 { AttrBonus RANGED_DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus RANGED_DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         } 
@@ -1374,9 +1537,9 @@
           }
           specialTraits = {
              { 0.1 { ExtraBodyPart HEAD 1}}
-             { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}
-             { 0.2 { LastingEffect COLLAPSED}}               
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }}
+             { 0.3 { Lasting { BLIND } Lasting { TELEPATHY }}}
+             { 0.2 { Lasting { COLLAPSED }}}               
+             { 0.1 { Lasting { COLLAPSED } Lasting { PLAGUE } Lasting { BLIND } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1391,7 +1554,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect SLOWED }}
+             { 0.3 { Lasting { SLOWED } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1406,11 +1569,11 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect HATE_GREENSKINS }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.3 { Lasting { TELEPATHY } }}
+             { 0.3 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { HATE_GREENSKINS } }}
+             { 0.3 { Lasting { FLYING } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1425,7 +1588,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 1.0 { LastingEffect BAD_BREATH }}
+             { 1.0 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
          }
@@ -1531,11 +1694,11 @@
             { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
           }
           specialTraits = {
-             { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { LastingEffect INSANITY}}
-             { 0.1 { LastingEffect HATE_UNDEAD}}
-             { 0.3 { LastingEffect AMBUSH_SKILL }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.1 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { Lasting { INSANITY }}}
+             { 0.1 { Lasting { HATE_UNDEAD }}}
+             { 0.3 { Lasting { AMBUSH_SKILL } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1596,7 +1759,7 @@
             { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
-             { 0.1 { LastingEffect INSANITY}}
+             { 0.1 { Lasting { INSANITY }}}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1656,15 +1819,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1682,15 +1845,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1740,8 +1903,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1758,8 +1921,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1804,10 +1967,10 @@
             { 0.1 AttractionInfo 1 {FurnitureType "FORGE" FurnitureType "WORKSHOP" FurnitureType "JEWELLER"}}
           }
           specialTraits = {
-             { 0.03 { WorkshopType "WORKSHOP" LastingEffect INSANITY }}
-             { 0.03 { WorkshopType "FORGE" LastingEffect INSANITY }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { WorkshopType "WORKSHOP" Lasting { INSANITY } }}
+             { 0.03 { WorkshopType "FORGE" Lasting { INSANITY } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1823,15 +1986,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1844,13 +2007,13 @@
             { 0.0 MinTurnRequirement 500 }
           }
           specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus SPELL_DAMAGE 13 Lasting { INSANITY }}}
              { 0.10 { ExtraTraining SPELL 4}}
              { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1863,13 +2026,13 @@
             { 0.0 MinTurnRequirement 500 }
           }
           specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus SPELL_DAMAGE 13 Lasting { INSANITY }}}
              { 0.10 { ExtraTraining SPELL 4}}
              { 0.05 { WorkshopType "LABORATORY" }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1883,15 +2046,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1905,15 +2068,15 @@
             { 0.3 AttractionInfo 1 {ItemIndex RANGED_WEAPON}}
           }
           specialTraits = {
-             { 0.03 { AttrBonus RANGED_DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus RANGED_DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1928,9 +2091,9 @@
           }
           specialTraits = {
              { 0.1 { ExtraBodyPart HEAD 1}}
-             { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}
-             { 0.2 { LastingEffect COLLAPSED}} 
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }}
+             { 0.3 { Lasting { BLIND } Lasting { TELEPATHY }}}
+             { 0.2 { Lasting { COLLAPSED }}} 
+             { 0.1 { Lasting { COLLAPSED } Lasting { PLAGUE } Lasting { BLIND } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1945,7 +2108,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect SLOWED }}
+             { 0.3 { Lasting { SLOWED } }}
  		     { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1960,11 +2123,11 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect HATE_GREENSKINS }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.3 { Lasting { TELEPATHY } }}
+             { 0.3 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { HATE_GREENSKINS } }}
+             { 0.3 { Lasting { FLYING } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -1979,7 +2142,7 @@
             { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
-             { 1.0 { LastingEffect BAD_BREATH }}
+             { 1.0 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
          }
@@ -2086,11 +2249,11 @@
             { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
           }
           specialTraits = {
-             { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { LastingEffect INSANITY}}
-             { 0.1 { LastingEffect HATE_UNDEAD}}
-             { 0.3 { LastingEffect AMBUSH_SKILL }}
-             { 0.1 { LastingEffect ENTERTAINER }}
+             { 0.1 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { Lasting { INSANITY }}}
+             { 0.1 { Lasting { HATE_UNDEAD }}}
+             { 0.3 { Lasting { AMBUSH_SKILL } }}
+             { 0.1 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2153,7 +2316,7 @@
             { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
-             { 0.1 { LastingEffect INSANITY}}
+             { 0.1 { Lasting { INSANITY }}}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2247,8 +2410,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2265,9 +2428,9 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }} 
+             { 0.10 { Lasting { MAGIC_RESISTANCE } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }} 
              { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2285,15 +2448,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2309,15 +2472,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2369,15 +2532,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -2394,15 +2557,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
 		{
@@ -2478,8 +2641,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
 		{
@@ -2495,8 +2658,8 @@
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
     }
@@ -2515,15 +2678,15 @@
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.03 { AttrBonus DEFENSE 5 Lasting { SLOWED }}}
+             { 0.05 { Lasting { RANGED_VULNERABILITY } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
+             { 0.05 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -2540,15 +2703,15 @@
              { 0.01 { ExtraBodyPart WING 2}}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
+             { 0.03 { AttrBonus DAMAGE 13 Lasting { INSANITY }}}
+             { 0.05 { Lasting { NIGHT_VISION } }}
+             { 0.05 { Lasting { DISARM_TRAPS_SKILL } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
+             { 0.05 { Lasting { MAGIC_VULNERABILITY } }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
+             { 0.03 { Lasting { BAD_BREATH } }}
+             { 0.01 { Lasting { ENTERTAINER } }}
           }
         }
         {
@@ -2630,8 +2793,8 @@
           specialTraits = {
              { 0.03 { AttrBonus DAMAGE 5 }}
              { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.02 { Lasting { HATE_ELVES } }}
+             { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
     }
@@ -2643,7 +2806,7 @@
           traits = { WORKER FIGHTER }
           keybinding = CREATE_IMP
 		  groupSize = {2 5}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           initialRecruitment = 1
         }
@@ -2682,26 +2845,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
 	    {
           ids = { "GOBLIN_ARCHER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 3}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2710,26 +2873,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
 		{
           ids = { "GOBLIN_BRUTE_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 4}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2738,26 +2901,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
         {
           ids = { "GOBLIN_CHICKENMANCER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 5}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2766,26 +2929,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
         {
           ids = { "GOBLIN_PRIEST_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {3 6}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2794,26 +2957,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
         {
           ids = { "GOBLIN_WARRIOR_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {5 6}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2822,26 +2985,26 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
         {
           ids = { "GOBLIN_WIZARD_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {6 8}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2849,19 +3012,19 @@
             { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.05 { LastingEffect FIRE_RESISTANT }}
-             { 0.05 { LastingEffect ENTERTAINER }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { Lasting { FIRE_RESISTANT } }}
+             { 0.05 { Lasting { ENTERTAINER } }}
+             { 0.05 { Lasting { SWIMMING_SKILL } }}
              { 0.05 { ExtraTraining ARCHERY 2}}
              { 0.05 { ExtraTraining SPELL 2}}
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
              { 0.05 { AttrBonus DAMAGE 5 }}
              { 0.05 { AttrBonus DEFENSE 5 }}
-             { 0.05 { LastingEffect REGENERATION }}
-             { 0.05 { LastingEffect TELEPATHY }}
-             { 0.05 { LastingEffect SLEEP_RESISTANT }}
-             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { Lasting { REGENERATION } }}
+             { 0.05 { Lasting { TELEPATHY } }}
+             { 0.05 { Lasting { SLEEP_RESISTANT } }}
+             { 0.05 { Lasting { NIGHT_VISION } }}
           }
         }
     }
@@ -2896,16 +3059,17 @@
           traits = { FIGHTER NO_LIMIT }
           frequency = 0.2
           groupSize = {5 6}
+		  autoTeam = true
           requirements = {
             { 1.0 CostInfo "GOLD" 6 } 
           }
           specialTraits = {
              { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
-             { 0.04 { LastingEffect HATE_ELVES }}
-             { 0.04 { LastingEffect HATE_DWARVES }}
-             { 0.04 { LastingEffect HATE_GREENSKINS }}
-             { 0.01 { LastingEffect BAD_BREATH }}
+             { 0.03 { OneOfTraits { Lasting { FAST_TRAINING } Lasting { SLOW_TRAINING } } }}
+             { 0.04 { Lasting { HATE_ELVES } }}
+             { 0.04 { Lasting { HATE_DWARVES } }}
+             { 0.04 { Lasting { HATE_GREENSKINS } }}
+             { 0.01 { Lasting { BAD_BREATH } }}
           }
         }
         {
@@ -2959,7 +3123,7 @@
             { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
-             { 0.1 { LastingEffect RAGE}}
+             { 0.1 { Lasting { RAGE }}}
           }
         }
     }

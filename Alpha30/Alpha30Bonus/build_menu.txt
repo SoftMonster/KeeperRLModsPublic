@@ -5,7 +5,7 @@
   "guildmaster" #Mod
   {
 
-    { Furniture {{ "TREE_TRUNK_GM" } "WOOD" 0 } "Clear ground (uses fire)"   "Structure"  "" d {} true DIG_OR_CUT_TREES}
+    { CutTree "Order Cut tree"   "Structure" }
 
     { Furniture {{ "WOOD_WALL_GM" }                  "WOOD" 5 }       "Wooden building"   "Structure"
       "Outdoor building. Tiles covered by the roof are considered territory and can be built on." }
@@ -111,39 +111,17 @@
 
   }
 
-  "traps" modify {
-  
-    { Trap "TERROR_TRAP" { "terror_trap" }                                 "Terror trap"       "Traps"
-        "Causes the trespasser to panic." 0                   { TechId "traps" }}
-
-    { Trap "POISON_GAS_TRAP" { "gas_trap" }                                "Gas trap"          "Traps"
-        "Releases a cloud of poisonous gas." 0                { TechId "traps" }}
-
-    { Trap "ALARM_TRAP" { "alarm_trap" }                                   "Alarm trap"        "Traps"
-        "Summons all minions" 0                               { TechId "traps" }}
-
-    { Trap "WEB_TRAP" { "web_trap" }                                       "Web trap"          "Traps"
-        "Immobilises the trespasser for some time." 0         { TechId "traps" }}
-
-    { Trap "BOULDER_TRAP" { "boulder" }                                    "Boulder trap"      "Traps"
-        "Causes a huge boulder to roll towards the enemy." 0  { TechId "traps" }}
-
-    { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
-        "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
-
-    { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
-        "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
-
+  "traps" modify append {
+  		
     #Modded Traps        
-    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
+    { Trap "FLOOR_SPIKES_TRAP"    "Floor Spikes trap" "Traps"
         "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
 
-    { Trap "TAR_PIT" { "tar_pit" }                                          "Tar pit"          "Traps"
+    { Trap "TAR_PIT"              "Tar pit"          "Traps"
         "Slows down interlopers." 0                           { TechId "traps" }}
 
-    { Trap "FALLING_RUBBLE_TRAP" { "map_mountain2" }                        "Falling rubble trap" "Traps"
+    { Trap "FALLING_RUBBLE_TRAP"  "Falling rubble trap" "Traps"
         "Rubble will fall down around them." 0                { TechId "traps" }}
-
 
   }
 
@@ -193,10 +171,8 @@
   #Sandbox
   "sandbox"
   {
-    { ImmediateDig                                               "Immediate Dig"   "Structure"  
-      "" i {} true DIG_OR_CUT_TREES}
-    { Dig                                                        "Order dig or cut tree"   "Structure"  
-      "" d {} true DIG_OR_CUT_TREES}
+    { ImmediateDig "Immediate Dig"   "Structure" }
+    { CutTree  "Order cut trees"   "Structure" }
     { Furniture {{ "MOUNTAIN" }                   "STONE" 0 }      "Soft rock"         "Structure" }
     { Furniture {{ "MOUNTAIN2" }                  "STONE" 0 }     "Hard rock"         "Structure" }
     { Furniture {{ "DUNGEON_WALL" "DUNGEON_WALL2" } "STONE" 0}       "Reinforce wall"    "Structure"
@@ -391,22 +367,6 @@
     { Furniture {{ "FIRE_TRAP" }               "GOLD"   0  } "Fire trap" "Traps" }
     { Furniture {{ "FLOOR_SPIKES_TRAP" }       "GOLD"   0  } "Spikes trap" "Traps" }
 
-    { Furniture {{ "CASTLE_A1" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_A2" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_A3" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_A4" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_B1" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_B2" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_B3" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_B4" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_C1" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_C2" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_C3" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_C4" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_D1" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_D2" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_D3" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
-    { Furniture {{ "CASTLE_D4" }  "WOOD"   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
   }
 
   #Elementalist keeper

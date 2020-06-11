@@ -10,7 +10,7 @@ EVIL_KEEPER modify append {
    {{ "fairy_queen" } "TOWER_OF_ILLUSIA" "Tower of Illusia" MAIN }
    {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
-   {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+   {{ "unknown_monster" ColorId RED } "AXEDIO_DUNGEON" "Unknown" MAIN }
    {{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN }
    {{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" MAIN }
 
@@ -23,9 +23,6 @@ EVIL_KEEPER modify append {
    {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
 #Ally
-    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
     {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" ALLY}
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
@@ -38,7 +35,7 @@ LAWFUL_KEEPER modify append {
     {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
-    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+    {{ "unknown_monster" ColorId RED } "AXEDIO_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
     {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" MAIN}
 	{{ "orc_primarch" } "ORC_MAIN" "Orc Clan" MAIN}
@@ -55,9 +52,7 @@ LAWFUL_KEEPER modify append {
     {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
 	{{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" ALLY }
-    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
+    {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY}
 }
 
 # Villains for evil adventurers
@@ -82,7 +77,7 @@ EVIL_ADVENTURER modify append {
     {{ "demon_lord" } "DEMON_DEN" "Demon den" MAIN }
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
-    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+    {{ "unknown_monster" ColorId RED } "AXEDIO_DUNGEON" "Unknown" MAIN }
 
     {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
     {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
@@ -101,9 +96,6 @@ EVIL_ADVENTURER modify append {
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
     {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" ALLY}
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
-    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 	{{ "orc_primarch" } "ORC_MAIN" "Greenskin Clan" ALLY}
 }
@@ -115,7 +107,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
-    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+    {{ "unknown_monster" ColorId RED } "AXEDIO_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
     {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" MAIN}
 	{{ "orc_primarch" } "ORC_MAIN" "Greenskin Clan" MAIN}
@@ -130,7 +122,4 @@ LAWFUL_ADVENTURER modify append {
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
     {{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" ALLY }
-    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
-    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
 }

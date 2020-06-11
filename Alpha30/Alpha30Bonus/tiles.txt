@@ -86,7 +86,14 @@
   { "rat_general" "h" ColorId ORANGE }
   { "rat_lady2" "h" ColorId PURPLE }
   { "rat_man" "h" ColorId PURPLE }
+  { "rat_conjurer" "h" ColorId PURPLE }
+  { "rat_feral" "h" ColorId LIGHT_RED }
+  { "rat_herbalist" "h" ColorId GREEN }
+  { "rat_marauder" "h" ColorId ORANGE }
   { "rat_man2" "h" ColorId PURPLE }
+  { "rat_gladiator" "h" ColorId ORANGE }
+  { "rat_rogue" "h" ColorId GRAY }
+  { "rat_worker" "h" ColorId LIGHT_GRAY }
   { "reddragon" "d" ColorId RED }
   { "red_dragonewt" "p" ColorId RED }
   { "scree_bird" "b" ColorId GREEN }
@@ -207,7 +214,8 @@
  { "adamantite_spiked_mace" ")" ColorId LIGHT_BLUE }
  { "steel_war_axe" ")" ColorId GREEN }
  { "adamantite_war_axe" ")" ColorId LIGHT_BLUE }
- { "net" ")" ColorId LIGHT_GRAY }
+ { "net" "#" ColorId LIGHT_GRAY }
+ { "net30" "#" ColorId LIGHT_GRAY }
  { "dwarf_beer" "!" ColorId YELLOW }
 
  #Modded walls
@@ -247,7 +255,15 @@
 
   { "barbarian" "@" ColorId YELLOW }
   { "barbarian_female" "@" ColorId YELLOW }
-  
+  { "axedio_head" "@" ColorId PURPLE }
+  { "axedio_foot_left" "@" ColorId PURPLE }
+  { "axedio_foot_right" "@" ColorId PURPLE }
+  { "axedio_hand_left" "@" ColorId PURPLE }
+  { "axedio_hand_right" "@" ColorId PURPLE }
+  { "assassin" "@" ColorId GRAY }
+  { "assassin_female" "@" ColorId GRAY }
+  { viewId = "shuriken" symbol = "✫" color = ColorId GRAY isSymbolFont = true }
+
  #King
   { "king" "@" ColorId PURPLE }
   { "shadow_king" "@" ColorId LIGHT_GRAY }
@@ -362,4 +378,4 @@
   
    #Misc
   { "dungeon_entrance_color" ">" ColorId WHITE }
-   
+  { "assassin_archer" "@" ColorId GRAY }

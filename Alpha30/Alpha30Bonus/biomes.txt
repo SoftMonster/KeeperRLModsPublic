@@ -523,14 +523,7 @@
       trees = "vegetationHigh"
     }
   }
-  wildlife = {
-    count = { 4 6 }
-    all = {
-      1 "BOAR"
-	  1 "DEER"
-	  1 "FOX"
-    }
-  }
+  wildlife = { count = { 0 } all = { } }
   darkKeeperEnemies = {
 	{ id = "ROYAL_BLACKSMITH" count = { 1 } }
 	{ id = "ROYAL_TRAPSMITH" count = { 1 } }
@@ -632,7 +625,7 @@
     }
   }
   wildlife = {
-    count = { 20 }
+    count = { 5 }
     all = {
       2 "BAT"
       1 "BLACK_RAT"
@@ -654,49 +647,6 @@
 	{ id = "SHADOW_TANNER" count = { 1 } }
 	{ id = "SHADOW_BREWER" count = { 1 } }
 	{ id = "SHADOW_JEWELLER" count = { 1 } }
-  }
-}
-
-"NEUTRAL_TOWN"
-{
-  lakes = {
-    size = {5 15}
-    count = {0}
-  }
-  overrideWaterType = "HILL"
-  sandType = "HILL"
-  items = "magicShrooms"
-  itemCount = { 16 32 }
-  mountains = {
-    lowlandRatio = 0.82
-    hillRatio = 0.16
-    hill = "HILL"
-    grass = "GRASS"
-    mountain = "MOUNTAIN"
-    mountainDeep = "MOUNTAIN2"
-    mountainFloor = "FLOOR"
-  }
-  wildlife = {
-    count = { 20 }
-    all = {
-      2 "DEER"
-    }
-  }
- darkKeeperEnemies = {
-	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
-	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
-	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
-	{ id = "NEUTRAL_TANNER" count = { 1 } }
-	{ id = "NEUTRAL_BREWER" count = { 1 } }
-	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
-  }
-  whiteKeeperEnemies = {
-	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
-	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
-	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
-	{ id = "NEUTRAL_TANNER" count = { 1 } }
-	{ id = "NEUTRAL_BREWER" count = { 1 } }
-	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
   }
 }
 
